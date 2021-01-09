@@ -3,20 +3,20 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Hidden,
   Typography,
 } from "@material-ui/core";
 import { Component } from "react";
 import { Link } from "react-router-dom";
+import styles from "./BlogCard.module.css";
 
 class BlogCard extends Component {
   render() {
     let { imageUrl, title, author, id, content } = this.props;
     return (
       <div>
-        <CardActionArea>
-          <Card>
-            <div>
+        <CardActionArea className={styles["card-action"]}>
+          <Card className={styles["card"]}>
+            <div className={styles["div-con"]}>
               <CardContent>
                 <Link
                   to={{
@@ -40,9 +40,11 @@ class BlogCard extends Component {
                 </Typography>
               </CardContent>
             </div>
-            <Hidden xsDown>
-              <CardMedia image={imageUrl} title={"blog" + title} />
-            </Hidden>
+            <CardMedia
+              image={imageUrl}
+              title={"blog" + title}
+              className={styles["card-media"]}
+            />
           </Card>
         </CardActionArea>
       </div>

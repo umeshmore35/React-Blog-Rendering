@@ -5,10 +5,11 @@ export const url = "http://localhost:8000/blog/";
 const FetchBlog = (store) => (next) => async (action) => {
   try {
     let { data } = await axios.get(url);
-
-    action.playload = {
-      blogs: [...data],
-    };
+    if (data) {
+      action.playload = {
+        blogs: [...data],
+      };
+    }
 
     return next(action);
   } catch (e) {

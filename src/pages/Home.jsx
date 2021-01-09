@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import BlogCard from "../component/BlogCard";
 import blogActionGentretor from "../redux/actions/blogAction.gentretor";
 import { blogActionType } from "../redux/constant/blogAction.type";
-
+import styles from "./Home.module.css";
 class Home extends Component {
   componentDidMount = () => {
     this.props.addUser();
@@ -18,8 +18,12 @@ class Home extends Component {
             return <BlogCard key={index} {...blog} />;
           })
         ) : (
-          <div>
-            <h1>Loading...</h1>
+          <div className={styles["loading"]}>
+            <h1>Loading</h1>
+            <img
+              src="https://samherbert.net/svg-loaders/svg-loaders/rings.svg"
+              alt="load"
+            />
           </div>
         )}
       </div>
