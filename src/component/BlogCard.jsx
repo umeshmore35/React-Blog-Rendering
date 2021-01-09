@@ -13,10 +13,10 @@ class BlogCard extends Component {
   render() {
     let { imageUrl, title, author, id, content } = this.props;
     return (
-      <div className>
+      <div>
         <CardActionArea>
-          <Card className>
-            <div className>
+          <Card>
+            <div>
               <CardContent>
                 <Link
                   to={{
@@ -41,7 +41,7 @@ class BlogCard extends Component {
               </CardContent>
             </div>
             <Hidden xsDown>
-              <CardMedia className image={imageUrl} title={"blog" + title} />
+              <CardMedia image={imageUrl} title={"blog" + title} />
             </Hidden>
           </Card>
         </CardActionArea>
