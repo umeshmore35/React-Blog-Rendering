@@ -9,6 +9,12 @@ class Blog extends Component {
     let id = this.props.match.params.id;
     this.props.findById(id);
   };
+  componentDidUpdate = (prevprops) => {
+    let id = this.props.match.params.id;
+    if (this.props.match.params.id !== prevprops.match.params.id) {
+      this.props.findById(id);
+    }
+  };
   render() {
     let { blog } = this.props;
 
