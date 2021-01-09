@@ -17,7 +17,7 @@ const blogReducer = (state = intialState, action) => {
     case blogActionType.THUNK:
       return {
         ...state,
-        blog: { ...state.blog, ...action.playload.blog },
+        blog: { ...state.blog, ...action.play },
       };
 
     default:
