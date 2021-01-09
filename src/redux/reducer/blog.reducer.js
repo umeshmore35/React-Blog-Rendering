@@ -5,7 +5,6 @@ const intialState = {
 };
 
 const blogReducer = (state = intialState, action) => {
-  console.log(action);
   switch (action.type) {
     case blogActionType.GET:
       return {

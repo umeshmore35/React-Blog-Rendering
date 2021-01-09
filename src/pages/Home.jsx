@@ -1,21 +1,21 @@
 import { Component } from "react";
 import { connect } from "react-redux";
+import BlogCard from "../component/BlogCard";
 import blogActionGentretor from "../redux/actions/blogAction.gentretor";
 import { blogActionType } from "../redux/constant/blogAction.type";
 
 class Home extends Component {
+  componentDidMount = () => {
+    this.props.addUser();
+  };
+
   render() {
+    let { state } = this.props;
     return (
       <div>
-        <h1>Hello</h1>
-        {this.props.addUser().palyload.blogs ? (
-          this.props.addUser().palyload.blogs.map((blog) => {
-            console.log(blog);
-            return (
-              <div>
-                <p>{blog.title}</p>;
-              </div>
-            );
+        {state ? (
+          state.map((blog, index) => {
+            return <BlogCard key={index} {...blog} />;
           })
         ) : (
           <div>
