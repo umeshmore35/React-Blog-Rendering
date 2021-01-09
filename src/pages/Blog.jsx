@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { connect } from "react-redux";
+import BlogContent from "../component/BlogContent";
 import blogActionGentretor from "../redux/actions/blogAction.gentretor";
 import { blogActionType } from "../redux/constant/blogAction.type";
 
@@ -9,16 +10,17 @@ class Blog extends Component {
     this.props.findById(id);
   };
   render() {
+    let { blog } = this.props;
+
     return (
       <div>
-        <h1>blog</h1>
+        <BlogContent {...blog} />
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log(state.blogReducer.blog.blog);
   return {
     blog: state.blogReducer.blog.blog,
   };
