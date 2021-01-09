@@ -2,23 +2,16 @@ import axios from "axios";
 import { blogActionType } from "../constant/blogAction.type";
 import { url } from "../middleware/fetchBlog";
 
-const blogActionGentretor = (actionType, playload = {}) => {
+const blogIDActionGentretor = (actionType, playload = {}) => {
   switch (actionType) {
-    case blogActionType.GET:
-      console.log("hello");
-      return {
-        type: blogActionType.GET,
-        playload: { ...playload },
-      };
-
     case blogActionType.THUNK:
-      return async (dispatch, getstate) => {
+      return async (dispatch) => {
         try {
           let { data } = await axios.get(`${url}/${playload.id}`);
           console.log(data);
-          dispatch({
+          return dispatch({
             playload: {
-              blog: { ...data },
+              blog: "hello",
             },
             type: blogActionType.THUNK,
           });
@@ -35,4 +28,4 @@ const blogActionGentretor = (actionType, playload = {}) => {
   }
 };
 
-export default blogActionGentretor;
+export default blogIDActionGentretor;
