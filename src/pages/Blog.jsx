@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
+import BlogContent from "../component/BlogContent";
 import blogActionGentretor from "../redux/actions/blogAction.gentretor";
-// import blogIDActionGentretor from "../redux/actions/blogIdAction.gentretor";
 import { blogActionType } from "../redux/constant/blogAction.type";
 
 class Blog extends Component {
@@ -9,19 +9,26 @@ class Blog extends Component {
     let id = this.props.match.params.id;
     this.props.findById(id);
   };
+  componentDidUpdate = (prevprops) => {
+    let id = this.props.match.params.id;
+    if (this.props.match.params.id !== prevprops.match.params.id) {
+      this.props.findById(id);
+    }
+  };
   render() {
+    let { blog } = this.props;
+
     return (
       <div>
-        <h1>blog</h1>
+        <BlogContent {...blog} />
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
-    blog: state,
+    blog: state.blogReducer.blog,
   };
 };
 const mapDispatchToProps = (dispacth) => {

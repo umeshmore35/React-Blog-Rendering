@@ -6,7 +6,6 @@ const intialState = {
 };
 
 const blogReducer = (state = intialState, action) => {
-  console.log(action);
   switch (action.type) {
     case blogActionType.GET:
       return {
@@ -17,7 +16,7 @@ const blogReducer = (state = intialState, action) => {
     case blogActionType.THUNK:
       return {
         ...state,
-        blog: { ...state.blog, ...action.playload.blog },
+        blog: { ...state.blog, ...action.play.blog },
       };
 
     default:
