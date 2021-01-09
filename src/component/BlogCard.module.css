@@ -1,0 +1,15 @@
+.card-action {
+  margin-top: 10vh;
+}
+
+.card {
+  display: flex;
+}
+
+.div-con {
+  width: 60%;
+}
+
+.card-media {
+  width: 40%;
+}

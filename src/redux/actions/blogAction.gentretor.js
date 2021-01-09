@@ -5,7 +5,6 @@ import { url } from "../middleware/fetchBlog";
 const blogActionGentretor = (actionType, playload = {}) => {
   switch (actionType) {
     case blogActionType.GET:
-      console.log("hello");
       return {
         type: blogActionType.GET,
         playload: { ...playload },

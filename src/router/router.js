@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Blog from "../pages/Blog";
 import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 import store from "../redux/store/store";
 class RouterRoute extends Component {
   render() {
@@ -12,6 +13,7 @@ class RouterRoute extends Component {
           <Router>
             <Route path="/" exact component={Home} />
             <Route path="/blog/:id" extact component={Blog} />
+            <Route path="*" exact={true} component={NotFound} />
           </Router>
         </Provider>
       </>
