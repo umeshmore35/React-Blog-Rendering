@@ -22,7 +22,7 @@ class Blog extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    blog: state.blogReducer.blog.blog,
+    blog: state.blogReducer.blog,
   };
 };
 const mapDispatchToProps = (dispacth) => {
