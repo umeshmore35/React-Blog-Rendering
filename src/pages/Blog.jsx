@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 import blogActionGentretor from "../redux/actions/blogAction.gentretor";
-// import blogIDActionGentretor from "../redux/actions/blogIdAction.gentretor";
 import { blogActionType } from "../redux/constant/blogAction.type";
 
 class Blog extends Component {
@@ -19,9 +18,9 @@ class Blog extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
+  console.log(state.blogReducer.blog.blog);
   return {
-    blog: state,
+    blog: state.blogReducer.blog.blog,
   };
 };
 const mapDispatchToProps = (dispacth) => {

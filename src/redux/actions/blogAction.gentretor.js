@@ -15,7 +15,7 @@ const blogActionGentretor = (actionType, playload = {}) => {
       return async (dispatch, getstate) => {
         try {
           let { data } = await axios.get(`${url}/${playload.id}`);
-          console.log(data);
+
           dispatch({
             type: blogActionType.THUNK,
             play: {
