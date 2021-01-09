@@ -1,7 +1,7 @@
 import FetchBlog from "../middleware/fetchBlog";
 
-const { createStore, applyMiddleware } = require("redux");
-const { rootReducer } = require("../reducer/root.reducer");
+import { createStore, applyMiddleware } from "redux";
+import rootReducer from "../reducer/root.reducer";
 
 const store = createStore(rootReducer, applyMiddleware(FetchBlog));
 

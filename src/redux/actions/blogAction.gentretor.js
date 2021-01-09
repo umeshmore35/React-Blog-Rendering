@@ -1,6 +1,6 @@
 import { blogActionType } from "../constant/blogAction.type";
 
-function blogActionGentretor(actionType, playload = {}) {
+const blogActionGentretor = (actionType, playload = {}) => {
   switch (actionType) {
     case blogActionType.GET:
       return {
@@ -13,6 +13,6 @@ function blogActionGentretor(actionType, playload = {}) {
         type: "invalid input",
       };
   }
-}
+};
 
 export default blogActionGentretor;
