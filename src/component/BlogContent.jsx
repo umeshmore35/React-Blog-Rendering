@@ -18,6 +18,7 @@ const BlogContent = (props) => {
                   to={{
                     pathname: `/blog/${link.id}`,
                   }}
+                  className={styles["react-link"]}
                 >
                   {link.title}
                 </Link>

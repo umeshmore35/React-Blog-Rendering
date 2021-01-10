@@ -16,3 +16,8 @@
 .map-link {
   margin-top: 2%;
 }
+
+.react-link {
+  text-decoration: none;
+  color: black;
+}
