@@ -1,6 +1,8 @@
 import { Component } from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "../component/Footer/Footer";
+import Navigation from "../component/Navigation/Navigation";
 import Blog from "../pages/Blog";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
@@ -11,9 +13,13 @@ class RouterRoute extends Component {
       <>
         <Provider store={store}>
           <Router>
-            <Route path="/" exact component={Home} />
-            <Route path="/blog/:id" extact component={Blog} />
-            <Route path="*" exact={true} component={NotFound} />
+            <Navigation />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/blog/:id" extact component={Blog} />
+              <Route exact component={NotFound} />
+            </Switch>
+            <Footer />
           </Router>
         </Provider>
       </>

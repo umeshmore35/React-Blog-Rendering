@@ -1,0 +1,25 @@
+.footer {
+  height: 15vh;
+  background-color: #4054b5;
+  text-align: center;
+}
+
+.icon1 {
+  width: 5vh;
+  height: 5vw;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.icon2 {
+  width: 5vw;
+  height: 5vh;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.icon3 {
+  width: 5vw;
+  height: 5vh;
+  margin-right: 2%;
+  margin-top: 2%;
+}
