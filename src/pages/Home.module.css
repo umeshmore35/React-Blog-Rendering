@@ -1,3 +1,10 @@
 .loading {
+  margin-top: 0;
+  height: 100vh;
+}
+
+.loading-image {
+  background-color: #4054b5;
   height: 100%;
+  width: 100%;
 }

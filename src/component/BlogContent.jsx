@@ -6,7 +6,7 @@ const BlogContent = (props) => {
     <div className={styles["blog-con"]}>
       <div className={styles["contain"]}>
         <h1>{title}</h1>
-        <img src={imageUrl} alt={"blog" + author} />
+        <img src={imageUrl} alt={"blog" + author} className={styles["image"]} />
         <p>{content}</p>
       </div>
       <div className={styles["links"]}>

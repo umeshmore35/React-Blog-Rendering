@@ -11,6 +11,7 @@ class Home extends Component {
 
   render() {
     let { state } = this.props;
+
     return (
       <div>
         {state ? (
@@ -19,10 +20,10 @@ class Home extends Component {
           })
         ) : (
           <div className={styles["loading"]}>
-            <h1>Loading</h1>
             <img
               src="https://samherbert.net/svg-loaders/svg-loaders/rings.svg"
               alt="load"
+              className={styles["loading-image"]}
             />
           </div>
         )}

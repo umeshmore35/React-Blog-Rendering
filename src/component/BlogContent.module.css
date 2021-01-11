@@ -1,5 +1,6 @@
 .blog-con {
   display: flex;
+  width: 100%;
 }
 
 .contain {
@@ -20,4 +21,20 @@
 .react-link {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 767.98px) {
+  .blog-con {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contain {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .links {
+    width: 100%;
+  }
 }
