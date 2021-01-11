@@ -5,10 +5,12 @@
   background-color: black;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .appbar {
   background-color: black;
   height: 13vh;
+  width: 100%;
 }
 
 .ul {
@@ -27,4 +29,26 @@
   padding-left: 3%;
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 767.98px) {
+  .navigation {
+    width: 100%;
+    padding: 0;
+  }
+  .appbar {
+    width: 100%;
+  }
+
+  .ul {
+    display: none;
+    padding-left: 0%;
+    margin: 0;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+  }
+  .tool {
+    width: 100%;
+  }
 }

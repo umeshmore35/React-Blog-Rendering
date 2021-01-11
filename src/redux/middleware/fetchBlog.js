@@ -1,9 +1,10 @@
 import axios from "axios";
 
-export const url = "http://localhost:8000/blog/";
-// export const url = "https://blog-express-back.herokuapp.com/blog/";
+// export const url = "http://localhost:8000/blog/";
+export const url = "https://blog-express-back.herokuapp.com/blog/";
 const FetchBlog = (store) => (next) => async (action) => {
   try {
+    console.log(action.playload);
     let { data } = await axios.get(url);
     if (data) {
       action.playload = {

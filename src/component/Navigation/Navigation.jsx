@@ -7,7 +7,7 @@ class Navigation extends Component {
     return (
       <div className={styles["navigation"]}>
         <AppBar className={styles["appbar"]}>
-          <Toolbar>
+          <Toolbar className={styles["tool"]}>
             <div>
               <Link to="/">
                 <img
