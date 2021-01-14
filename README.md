@@ -11,8 +11,22 @@
 
 - rendering  data Using  Backend Server 
 
+## Get Started
 
+## Clone project
 
+```
+git clone umeshmore45/React-blog-task2
+```
+## install Dependency
+
+```
+npm install
+```
+## Run App
+```
+npm run start
+```
 
 
 ## Available Scripts
@@ -59,3 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Demo Link
+
+ [Demo](https://cocky-kilby-f5037b.netlify.app/)
+
+## Contact Me
+[Twitter](https://twitter.com/Iamdvirus45)
+
+
