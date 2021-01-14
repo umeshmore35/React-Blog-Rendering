@@ -1,5 +1,8 @@
 # Blog Rendering Using React
 
+![alt text](https://raw.githubusercontent.com/umeshmore45/Timer-Application/master/img/logo.png)
+
+
 ## Features
 - Build with React-Dom & React-Router &  React-Redux
 
@@ -7,18 +10,23 @@
 
 - Backend Hosted On [Hereku](https://www.heroku.com/home)
 
+- for Styling  [Matrial UI](https://material-ui.com/) is Used
+
 - Home Page Shows Cards, Each Click Open New Blog
 
 - rendering  data Using  Backend Server 
 
 ## Get Started
 
+![alt text](https://media.giphy.com/media/11BbGyhVmk4iLS/giphy.gif)
+
+
 ## Clone project
 
 ```
 git clone umeshmore45/React-blog-task2
 ```
-## install Dependency
+## Install Dependency
 
 ```
 npm install
@@ -70,9 +78,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## Demo Link
 
