@@ -7,7 +7,7 @@
 
 - Backend Hosted On [Hereku](https://www.heroku.com/home)
 
-- Home Pages Shows Card Each Click Open New Blog
+- Home Page Shows Cards, Each Click Open New Blog
 
 - rendering  data Using  Backend Server 
 
